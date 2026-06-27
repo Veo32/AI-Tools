@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { toLocale } from "@/lib/locales";
 import { SearchPanel } from "@/components/tools/search-panel";
 import { ToolsGridClient } from "@/components/tools/tools-grid-client";
@@ -11,9 +12,13 @@ export default async function DiscoverPage({ params }: { params: Promise<{ local
         <h1 className="text-3xl font-bold">Discover AI tools</h1>
         <p className="mt-2 text-zinc-600">Filter by category, pricing, tags, ratings, freshness, and sponsored placement.</p>
       </div>
-      <SearchPanel locale={locale} />
+      <Suspense fallback={<div>Loading...</div>}>
+        <SearchPanel locale={locale} />
+      </Suspense>
       <div className="mt-8">
-        <ToolsGridClient locale={locale} />
+        <Suspense fallback={<div>Loading tools...</div>}>
+          <ToolsGridClient locale={locale} />
+        </Suspense>
       </div>
     </section>
   );
