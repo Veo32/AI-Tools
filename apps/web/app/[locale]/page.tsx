@@ -13,7 +13,6 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const dictionary = getDictionary(locale);
   const t = dictionary.home;
   const actions = dictionary.actions;
-
   return (
     <>
       <JsonLd
@@ -37,7 +36,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <p className="mt-4 text-lg leading-8 text-zinc-700">{t.subtitle}</p>
           </div>
           <div className="mt-8">
-            <Suspense fallback={<div>Loading...</div>}><SearchPanel locale={locale} placeholder={t.searchPlaceholder} searchLabel={actions.search} />
+            <Suspense fallback={<div>Loading...</div>}>
+              <SearchPanel locale={locale} placeholder={t.searchPlaceholder} searchLabel={actions.search} />
+            </Suspense>
           </div>
           <dl className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {dashboardStats.map((stat) => (
@@ -56,7 +57,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <p className="text-zinc-600">Sponsored, verified, and high-performing tools appear first.</p>
           </div>
         </div>
-        <Suspense fallback={<div>Loading...</div>}><ToolsGridClient locale={locale} filter="featured" />
+        <Suspense fallback={<div>Loading...</div>}>
+          <ToolsGridClient locale={locale} filter="featured" />
+        </Suspense>
       </section>
     </>
   );
