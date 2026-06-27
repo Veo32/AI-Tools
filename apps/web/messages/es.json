@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "discover": "Explorar",
+    "categories": "Categorías",
+    "compare": "Comparar",
+    "pricing": "Precios",
+    "api": "API",
+    "dashboard": "Panel"
+  },
+  "home": {
+    "eyebrow": "Inteligencia empresarial de herramientas de IA",
+    "title": "Encuentra, compara y crece con las herramientas de IA adecuadas",
+    "subtitle": "Busca en un mercado escalable con reseñas, posiciones patrocinadas, API y descubrimiento multilingüe.",
+    "searchPlaceholder": "Buscar en más de 100,000 herramientas"
+  },
+  "actions": {
+    "search": "Buscar",
+    "submitTool": "Enviar herramienta",
+    "viewTool": "Ver herramienta",
+    "compare": "Comparar",
+    "bookmark": "Guardar"
+  }
+}
+

@@ -1,0 +1,33 @@
+{
+  "name": "ai-tools-directory-saas",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Enterprise AI tools directory SaaS platform with multilingual public directory, dashboards, monetization, analytics, and API access.",
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "dev": "turbo dev",
+    "dev:web": "pnpm --filter @aitools/web dev",
+    "dev:web:3001": "pnpm --filter @aitools/web dev:3001",
+    "dev:web:3002": "pnpm --filter @aitools/web dev:3002",
+    "dev:api": "pnpm --filter @aitools/api dev",
+    "clean:web": "pnpm --filter @aitools/web clean",
+    "build": "turbo build",
+    "build:web": "pnpm --filter @aitools/web build",
+    "build:api": "pnpm --filter @aitools/api build",
+    "lint": "turbo lint",
+    "test": "turbo test",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,md,yml,yaml,css}\"",
+    "db:generate": "pnpm --filter @aitools/database db:generate",
+    "db:migrate": "pnpm --filter @aitools/database db:migrate",
+    "db:seed": "pnpm --filter @aitools/database db:seed",
+    "clean:install": "powershell -ExecutionPolicy Bypass -File scripts/reset-install.ps1",
+    "docker:up": "docker compose up --build",
+    "docker:down": "docker compose down -v"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.10",
+    "prettier": "^3.4.2",
+    "turbo": "^2.3.3",
+    "typescript": "^5.7.3"
+  }
+}

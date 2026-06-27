@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "discover": "Discover",
+    "categories": "Categories",
+    "compare": "Compare",
+    "pricing": "Pricing",
+    "api": "API",
+    "dashboard": "Dashboard"
+  },
+  "home": {
+    "eyebrow": "Enterprise AI tools intelligence",
+    "title": "Find, compare, and grow with the right AI tools",
+    "subtitle": "Search a scalable AI tools marketplace with reviews, sponsored placements, API access, and multilingual discovery.",
+    "searchPlaceholder": "Search 100,000+ AI tools"
+  },
+  "actions": {
+    "search": "Search",
+    "submitTool": "Submit tool",
+    "viewTool": "View tool",
+    "compare": "Compare",
+    "bookmark": "Bookmark"
+  }
+}
+

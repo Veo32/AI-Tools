@@ -1,0 +1,10 @@
+{
+  "name": "@aitools/config",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    "./tsconfig": "./tsconfig.json"
+  }
+}
+

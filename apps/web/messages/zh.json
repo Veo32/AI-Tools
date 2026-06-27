@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "discover": "发现",
+    "categories": "分类",
+    "compare": "对比",
+    "pricing": "价格",
+    "api": "API",
+    "dashboard": "仪表盘"
+  },
+  "home": {
+    "eyebrow": "企业级 AI 工具情报",
+    "title": "发现、比较并发展合适的 AI 工具",
+    "subtitle": "搜索可扩展的 AI 工具市场，支持评论、赞助展示、API 和多语言发现。",
+    "searchPlaceholder": "搜索 100,000+ AI 工具"
+  },
+  "actions": {
+    "search": "搜索",
+    "submitTool": "提交工具",
+    "viewTool": "查看工具",
+    "compare": "对比",
+    "bookmark": "收藏"
+  }
+}
+
