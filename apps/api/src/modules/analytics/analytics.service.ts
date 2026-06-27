@@ -15,8 +15,7 @@ export class AnalyticsService {
         event: dto.event,
         source: dto.source,
         path: dto.path,
-        metadata: (dto.metadata ?? {}) as Prisma.InputJsonValue,
-        userAgent: context.userAgent
+        metadata: (dto.metadata ?? {}) as Prisma.InputJsonValue
       }
     });
 
@@ -75,3 +74,4 @@ export class AnalyticsService {
     });
   }
 }
+
