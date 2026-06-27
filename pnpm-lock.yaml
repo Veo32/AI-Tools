@@ -183,9 +183,6 @@ importers:
 
   apps/web:
     dependencies:
-      '@aitools/shared':
-        specifier: workspace:*
-        version: link:../../packages/shared
       '@hookform/resolvers':
         specifier: ^3.10.0
         version: 3.10.0(react-hook-form@7.80.0(react@19.2.7))
