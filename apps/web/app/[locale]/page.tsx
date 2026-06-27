@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { toLocale } from "@/lib/locales";
 import { getDictionary } from "@/lib/dictionaries";
 import { JsonLd } from "@/components/seo/json-ld";
@@ -36,7 +37,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <p className="mt-4 text-lg leading-8 text-zinc-700">{t.subtitle}</p>
           </div>
           <div className="mt-8">
-            <SearchPanel locale={locale} placeholder={t.searchPlaceholder} searchLabel={actions.search} />
+            <Suspense fallback={<div>Loading...</div>}><SearchPanel locale={locale} placeholder={t.searchPlaceholder} searchLabel={actions.search} />
           </div>
           <dl className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {dashboardStats.map((stat) => (
@@ -55,7 +56,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <p className="text-zinc-600">Sponsored, verified, and high-performing tools appear first.</p>
           </div>
         </div>
-        <ToolsGridClient locale={locale} filter="featured" />
+        <Suspense fallback={<div>Loading...</div>}><ToolsGridClient locale={locale} filter="featured" />
       </section>
     </>
   );
