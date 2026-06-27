@@ -1,0 +1,12 @@
+﻿services:
+  - type: web
+    name: aitools-api
+    runtime: node
+    rootDir: apps/api
+    buildCommand: corepack enable && corepack prepare pnpm@9.15.4 --activate && pnpm install && pnpm build
+    startCommand: node dist/main.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
